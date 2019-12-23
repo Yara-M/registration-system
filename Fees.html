@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Student Portal</title>
+<meta charset="utf-8">
+<meta lang="en" >
+<link rel="stylesheet" type="text/css" href="FeesC.css">
+
+<script>
+function Start() {
+
+var R = Math.floor(Math.random()*5)+1 ;
+
+document.getElementById("Counter").value = R ;
+
+switch(R)
+{
+case 1 :
+document.getElementById("Coast").value = "1000 $" ;
+break ;
+case 2 :
+document.getElementById("Coast").value = "2000 $" ;
+break ;
+case 3 :
+document.getElementById("Coast").value = "3000 $" ;
+break ;
+case 4 :
+document.getElementById("Coast").value = "4000 $" ;
+break ;
+case 5 :
+document.getElementById("Coast").value = "5000 $" ;
+break ;
+}
+}
+</script>
+
+</head>
+
+<!----------------------------------------------------------------------------------------------------------------------------------->
+
+<body onload="Start()" class="all">
+
+<ul class="nav">
+<li><a href="StudentHome.html"> Home </a></li>
+<li><a href="StudentInfo.html"> Information </a></li>
+<li><a href="StudentCourses.html"> Courses </a></li>
+<li><a href="Fees.html"> Fees </a></li>
+<li class="log"><a href="Login.html"> Logout </a></li>
+</ul>
+
+<div class="Box">
+
+<table>
+<tr>
+<td><h3 class="Print"> Number of Courses You has Added : </h3></td>
+<td><input type="text" id="Counter" class="Text" readonly></td>
+</tr>
+<tr>
+<td><h3 class="Print"> Course Coast = </h3></td>
+<td><h3 class="Print"> 1000 $ </h3></td>
+</tr>
+<tr>
+<td><h3 class="Print"> Total Coast For Your Courses = </h3></td>
+<td><input type="text" id="Coast" class="Text" readonly></td>
+</tr>
+</table>
+
+</div>
+
+</body>
+
+<!----------------------------------------------------------------------------------------------------------------------------------->
+
+<footer>
+
+&copy;<a href="#"> University of Yotuga </a>
+&nbsp;&mdash;&nbsp;
+<a href="mailto:20181875@fue.edu.eg"> Contact us </a>
+
+</footer>
+
+</html>
